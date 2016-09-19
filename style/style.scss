@@ -1,6 +1,11 @@
-#login {
-	color: red;
-	button {
-	      color:blue;
-	}
+.navbar-inverse {
+	background-color: #222;
+	border-bottom: 2px solid red;
+	border-radius: 0;
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 3px;
 }
