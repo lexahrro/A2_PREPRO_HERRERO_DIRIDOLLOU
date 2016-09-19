@@ -43,7 +43,6 @@ h4 {
 
 
 
-
 /* Slidebar */
 
 
@@ -169,5 +168,26 @@ body {
         position: relative;
         margin-right: 0;
     }
+}
+
+.carousel-indicators li {
+	 display: inline-block;
+	 width: 20px;
+	 height: 5px;
+	 margin: 0;
+	 text-indent: -999px;
+	 cursor: pointer;
+	 background-color: #000\9;
+	 background-color: rgba(0,0,0,0);
+	 border: 1px solid #fff;
+	 border-radius: 0px;
+}
+
+.carousel-indicators .active {
+	width: 20px;
+	height: 5px;
+	margin: 0;
+	background-color: #fff;
+
 }
 
