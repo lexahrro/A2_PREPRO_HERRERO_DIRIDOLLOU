@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<title>Bienvenue sur le site d'AMG</title>
 	<meta charset="utf-8">
@@ -86,18 +86,185 @@
 			<p>Project 2</p>
 		</div>
 		<div class="col-sm-4">
-			<div class="well">
-				<p>Some text..</p>
-			</div>
-			<div class="well">
-				<p>Some text..</p>
-			</div>
+			<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+			<p>Project 2</p>
 		</div>
 	</div>
 </div><br>
 
-<footer class="container-fluid text-center">
-	<p>Footer Text</p>
+<footer>
+	<center>
+		<footer>
+			<div  class="hidden-xs">
+				<div class="container-footer">
+					<div id="footer" class="row">
+						<div class="col-sm-3 col-xs-6">
+							<h4>Mercedes</h4>
+							<a href="#">Configurez votre Mercedes</a><br>
+							<a href="#">Comparer modèles</a><br>
+							<a href="#">Rechercher un véhicule</a><br>
+							<a href="#">Concessionnaires</a><br>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<h4>Le site</h4>
+							<a href="amg.html">AMG GT-S</a><br>
+							<a href="cab.html">Cabriolet</a><br>
+							<a href="story.html">Histoire</a><br>
+							<a href="contact.html">Contact</a><br>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<h4>Services</h4>
+							<a href="hebergement.php">Financement</a><br>
+							<a href="restauration.php">Login</a><br>
+							<a href="galerie.php">News</a><br>
+							<a href="contact.php">Contact</a><br>
+						</div>
+						<div class="col-sm-3 col-xs-6">
+							<h4>Réseaux sociaux</h4>
+							<div class="social">
+								<a class="social1" href="https://www.facebook.com/disneylandpariscareers/?fref=ts" target="_blank" title="Facebook" ><img src="img/fb.png"></a>
+								<a class="social2" href="https://twitter.com/disneylandparis" target="_blank" title="Twitter" ><img src="img/twitter.png"></a>
+								<a class="social3" href="https://www.youtube.com/user/disneylandparis" target="_blank" title="YouTube" ><img src="img/yt.png"></a>
+								<a class="social4" href="https://www.instagram.com/disneylandparis/" target="_blank" title="Instagram" ><img src="img/insta.png"></a>
+							</div>
+							<h4>Communauté</h4>
+							<a href="http://go-disneylandparis.com/?utm_source=Web_Relaunch_FRL&utm_medium=Internal_link&utm_campaign=Lefter_forum_FRL" target="_blank">Forum Officiel</a><br>
+						</div>
+						<div class="col-sm-12 "><hr class=sepbas width= 32%  size=4></div>
+						<div class="col-sm-12 "><h5>Copyright 2016 © Alexandre Herrero</h5></div>
+					</div>
+				</div>
+			</div>
+	</center>
+
+	<div class="visible-xs">
+		<div id="footermobile" class="container">
+			<div  class="col-xs-12">
+				<a href="disneyland.php">DisneyLand Paris</a><br>
+				<hr>
+				<a href="wds.php">Walt Disney Studios</a><br>
+				<hr>
+				<li id="attfooter">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" >Attractions <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="frontierland.php">FrontierLand</a></li>
+						<li><a href="fantasyland.php">FantasyLand</a></li>
+						<li><a href="discoveryland.php">DiscoveryLand</a></li>
+						<li><a href="adventureland.php">AdventureLand</a></li>
+					</ul>
+				</li>
+				<hr>
+				<a href="billets.php">Billets</a><br>
+				<hr>
+				<a href="contact.php">Contact</a><br>
+				<hr>
+				<a href="http://www.hellodisneyland.com/wp-content/uploads/2014/07/plan_disneyland_web.jpg" target="_blank">Plan du parc</a><br>
+				<hr>
+				<a href="hebergement.php">Hébergement</a><br>
+				<hr>
+				<a href="restauration.php">Restauration</a><br>
+				<hr>
+				<div class="social">
+					<a class="social1" href="https://www.facebook.com/disneylandpariscareers/?fref=ts" target="_blank" title="Facebook" ><img src="img/fb.png"></a>
+					<a class="social2" href="https://twitter.com/disneylandparis" target="_blank" title="Twitter" ><img src="img/twitter.png"></a>
+					<a class="social3" href="https://www.youtube.com/user/disneylandparis" target="_blank" title="YouTube" ><img src="img/yt.png"></a>
+					<a class="social4" href="https://www.instagram.com/disneylandparis/" target="_blank" title="Instagram" ><img src="img/insta.png"></a>
+				</div>
+				<hr>
+				<center><div id="copyright" class="col-sm-12 "><h5>Copyright 2016 © Alexandre Herrero</h5></div></center>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Inscription</h1>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal"  method="POST" action="inscription.php">
+							<div class="form-group">
+								<label for="pseudo" class="col-sm-12">Pseudo</label>
+								<div class="col-sm-12">
+									<input class="form-control" type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mail" class="col-sm-12">e-Mail</label>
+								<div class="col-sm-12">
+									<input class="form-control" type="email" placeholder="Votre mail" id="mail" name="mail" value="<?php if(isset($mail)) { echo $mail; } ?>" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mail2" class="col-sm-12">Confirmation mail</label>
+								<div class="col-sm-12">
+									<input class="form-control" type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2" value="<?php if(isset($mail2)) { echo $mail2; } ?>" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mdp" class="col-sm-12">Mot de passe</label>
+								<div class="col-sm-12">
+									<input class="form-control" type="password" placeholder="Votre mot de passe" id="mdp" name="mdp" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="mdp2" class="col-sm-12">Confirmation mail</label>
+								<div class="col-sm-12">
+									<input class="form-control" type="password" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-10 col-sm-offset-2">
+									<! Will be used to display an alert to the user>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<input id="submit" name="forminscription" type="submit" value="Je m'inscris" class="btn btn-primary">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal2" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1>Connexion</h1>
+					</div>
+					<br>
+					<div class="modal-body">
+						<form class="form-horizontal" method="POST" action="connexion.php">
+							<div class="form-group">
+								<div id="inputconnexionmodal" class="form-group">
+									<input class="form-control" type="email" name="mailconnect" placeholder="Mail" />
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div id="inputconnexionmodal" class="form-group">
+									<input class="form-control" type="password" name="mdpconnect" placeholder="Mot de passe" />
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div id="inputconnexionmodal" class="form-group">
+									<input type="submit" name="formconnexion" value="Connexion" class="btn btn-primary" />
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer"></div>
+				</div>
+			</div>
+		</div>
+</footer>
+
 </footer>
 
 </body>
