@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<?php session_start(); ?>
+<html lang="fr">
+<head>
+  <title>DisneyLand</title>
+	<meta name="description" content="Bienvenue sur le site officiel de Disneyland Paris. Trouvez toutes les informations nécessaires et réservez votre séjour et vos tickets à Disneyland Paris ">
+	<meta name="keywords" content="Disneyland Paris, Walt Disney Studios, Attraction, Hotel, Hebergement, Sensation Forte">
+	<meta name="author" content="Alexandre HERRERO">
+	<meta name="robots" content="index">
+	<meta name="Identifier-URL" content="www.disneylandparis.esy.es">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon"  href="img/favicon.png"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<?php include ("menu.php");?>
+<div id="my_carousel" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner">
+		<ol class="carousel-indicators">
+			<li data-target="#my_carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#my_carousel" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-caption">
+            <center><h1><img class="img-responsive"src="img/disneylogo2.png"></h1></center>
+        </div>
+		
+		<div class="item active"> 	
+			<div class="carousel-page">
+			<img src="img/mainimg.jpg" class="img-responsive"/>
+			</div> 
+			<!--<div class="carousel-caption">LE CHATEAU</div>   Legende carousel -->
+		</div>  
 
+		<div class="item"> 
+			<div class="carousel-page">
+			<img src="img/img2.jpg" class="img-responsive"/>
+			</div> 
+		</div>  
+
+
+		<a class="left carousel-control" href="#my_carousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#my_carousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>     
+	</div>
+</div>
+
+<div id="containerrow" class="row">
+	<a href="billets.php">
+	<div id="row1" class="col-sm-4">
+		<h3>Réservation</h3> 
+		<p>Cliquez ici pour réserver vos billets au tarif exceptionnel</p>
+	</div>
+	</a>
+	<a href="disneyland.php">
+	<div id="row1" class="col-sm-4">
+		<h3>Attractions</h3> 
+		<p>Achetez un billet, et revenez nous voir une deuxième fois</p>
+	</div>
+	</a>
+	<a href="hebergement.php">
+	<div id="row1" class="col-sm-4">
+		<h3>Hébergement</h3> 
+		<p>Réservez a l'avance et économisez sur le prix de l'entrée</p>
+	</div>
+	</a>
+</div>
+
+<div id="question" class="row">
+	<div class="col-sm-12">
+		<h5>Une question sur tous les produits et offres disponibles? Nos conseillers clientèle vous renseignent au 0 825 300 500 (Service 0,15 €/min + prix appel)</h5>
+	</div>
+</div>
+<?php include ("footer.php");?>
+</body>
+</html>
