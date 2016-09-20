@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<title>Bienvenue sur le site d'AMG</title>
 	<meta charset="utf-8">
@@ -38,13 +38,7 @@
 </nav>
 <!-- Fin Navbar debut du contenu -->
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+
 
 <script>
 $(document).ready(function(){
@@ -169,6 +163,16 @@ $(document).ready(function(){
 
 
 <div id="myCarousel" class="carousel slide" data-interval="false">
+
+    <div class="container">
+        <div class="row">
+            <span class="col-xs-4 btn btn-info btn_description">Description</span>
+            <span class="col-xs-4 btn btn-info btn_concept">Concept</span>
+            <span class="col-xs-4 btn btn-info btn_systeme">Systeme</span>
+            <a class="btn-systeme" href="#">Histoire du logo</a>
+        </div>
+    </div>
+
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
@@ -187,6 +191,7 @@ $(document).ready(function(){
         </div>
       </div>
     </div>
+
       <div class="item">
        <div class="jumbotron">
         <div class="container">
@@ -210,8 +215,7 @@ Après une série de ces chutes, l'ascenseur s'arrête en bas de la cage et effe
         <div class="jumbotron">
           <div class="container">
             <div class="row">
-            
-            <div class="col-md-12">
+                <div class="col-md-12">
             <img src="http://img.1.vacanceo.net/classic/114932.jpg" class="img-responsive form">
             <p class="arial">L'attraction utilise une technologie d'ascenseur spécialement développée pour Disney par Otis (N°1 mondial de l'ascenseur), la filiale de United Technologies aussi responsable des aquariums géants de The Living Seas à EPCOT. La version de Floride permet de déplacer la cabine dans et à l'extérieur de sa cage (en vitesse réduite). Ce système ne fut pas utilisé dans les versions suivantes, pour des raisons techniques. C'est cette partie de l'attraction qui pose le plus de problèmes nécessitant l'arrêt de l'attraction. Les ordinateurs surveillant les ascenseurs perdent fréquemment la trace des cabines durant cette section horizontale. Les autres versions proposent à la place un système de miroir transformant les reflets en fantômes.
               Lors des premiers contacts avec Otis, les imagineers de Disney essayèrent les derniers modèles d'ascenseurs de la marque ; mais un problème existait : on ne ressentait ni la descente ni l'ascension, ce qui n'aura pas fait une bonne attraction.
@@ -220,15 +224,10 @@ Après une série de ces chutes, l'ascenseur s'arrête en bas de la cage et effe
             </div>
           </div>
         </div>
-      </div>
-    
 
-
-    </div>
 
     <!-- Left and right controls -->
-  </div>
-</div>
+
 
 <script>
 $(document).ready(function(){
@@ -252,14 +251,9 @@ $(document).ready(function(){
 });
 </script>
 
-<div class="container">
-            <div class="row">
-              <span class="col-xs-4 btn btn-info btn_description">Description</span>
-              <span class="col-xs-4 btn btn-info btn_concept">Concept</span>
-              <span class="col-xs-4 btn btn-info btn_systeme">Systeme</span>
-            </div>
-      </div> 
 
+    </div>
+ </div>
 
 </body>
 </html>

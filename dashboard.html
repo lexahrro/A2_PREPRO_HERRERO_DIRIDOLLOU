@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <title>Bienvenue sur le site d'AMG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="bootstrap/js/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a class="btn-edprofil" href="#">Editer Mon Profil</a>
+                </li>
+                <li>
+                    <a class="btn-commentaires" href="#">Commentaires</a>
+                </li>
+                <li>
+                    <a class="btn-articles" href="#">Articles</a>
+                </li>
+                <li>
+                    <a class="btn-membres" href="#">Membres</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+		
+        <div id="page-content-wrapper">
+		<center>
+		<div class="visible-xs">
+		<div class="container">
+		<div class="row">
+		<a class="btn btn-primary btn-edprofil btndashboard" href="#">Edition Profil</a>
+		<a class="btn btn-primary btn-commentaires btndashboard" href="#">Commentaires</a>
+		<a class="btn btn-primary btn-articles btndashboard" href="#">Articles</a>
+		<a class="btn btn-primary btn-membres btndashboard" href="#">Membres</a>
+
+		</div>
+		</div>
+		</div>
+		</center>
+
+  <div id="myCarousel" class="carousel slide" data-interval="false">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="item">
+       <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+			<h2>Liste des Commentaires</h2>
+			<br>
+
+            </div>
+        </div>
+      </div>
+  </div> 
+  </div>
+
+      <div class="item">
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+			<h2>Liste des Articles</h2>
+			<a class="btn btn-primary" href="add_post.php">Ajouter un article<span class="glyphicon glyphicon-chevron-right"></span></a>
+			<hr>
+
+
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+			<h2>Liste des Membres</h2>
+			<br>
+
+    </div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+    <!-- Left and right controls -->
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+    // Activate Carousel
+
+    
+    // Enable Carousel Indicators
+    $(".btn-edprofil").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".btn-commentaires").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".btn-articles").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+	$(".btn-membres").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+
+    
+    // Enable Carousel Controls
+
+});
+</script>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+	</div>
+
+</body>
+</html>
