@@ -12,6 +12,7 @@
 
 .navbar-inverse .navbar-nav > li > a {
   color: #ffffff;
+  font-variant: small-caps;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -196,4 +197,13 @@ body {
   width: 100%;
   color: white;
   font-size: 30px;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
 }
