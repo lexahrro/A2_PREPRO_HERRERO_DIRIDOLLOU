@@ -1,3 +1,6 @@
+$grisfond : #D2D2D2;
+
+
 .navbar-inverse {
 	background-color: #222;
 	border-bottom: 2px solid red;
@@ -190,4 +193,29 @@ body {
 	background-color: #fff;
 
 }
+
+
+.captionindex {
+	opacity : 0;
+	left: 0;
+	position:absolute;
+	text-align:center;
+	top: 45%;
+	width: 100%;
+	color: white;
+	font-size: 30px;
+}
+
+.captionindex:hover {
+	opacity : 100;
+	left: 0;
+	position:absolute;
+	text-align:center;
+	top: 45%;
+	width: 100%;
+	color: white;
+	font-size: 30px;
+}
+
+
 

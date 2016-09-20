@@ -175,3 +175,25 @@ body {
   margin: 0;
   background-color: #fff;
 }
+
+.captionindex {
+  opacity: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+}
+
+.captionindex:hover {
+  opacity: 100;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+}

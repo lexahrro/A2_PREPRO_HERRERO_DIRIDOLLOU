@@ -75,23 +75,29 @@
 </div>
 
 <div class="container-fluid">
-	<h3>What We Do</h3><br>
+	<br>
 	<div class="row">
 		<div class="col-sm-4">
-			<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-			<p>Current Project</p>
+			<img src="img/index1.jpg" class="img-responsive imgindex" style="width:100%" alt="Image">
+			<p class="captionindex">Configurateur</p>
+		</div>
+		<div class="visible-xs">
+			<hr>
 		</div>
 		<div class="col-sm-4">
-			<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-			<p>Project 2</p>
+			<a href="#"><img src="img/index2.jpg" class="img-responsive imgindex" style="width:100%" alt="Image"></a>
+			<a href="#"class="captionindex">Business Solutions</a>
+		</div>
+		<div class="visible-xs">
+			<hr>
 		</div>
 		<div class="col-sm-4">
-			<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-			<p>Project 2</p>
+			<img src="img/index3.jpg" class="img-responsive imgindex" style="width:100%" alt="Image">
+			<a class="captionindex">Tarifs & Essais</a>
 		</div>
 	</div>
 </div><br>
-
+</body>
 <footer>
 	<center>
 		<footer>
@@ -100,7 +106,7 @@
 					<div id="footer" class="row">
 						<div class="col-sm-3 col-xs-6">
 							<h4>Mercedes</h4>
-							<a href="#">Configurez votre Mercedes</a><br>
+							<a href="#">Configurateur</a><br>
 							<a href="#">Comparer modèles</a><br>
 							<a href="#">Rechercher un véhicule</a><br>
 							<a href="#">Concessionnaires</a><br>
@@ -175,98 +181,6 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="container">
-		<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h1>Inscription</h1>
-					</div>
-					<div class="modal-body">
-						<form class="form-horizontal"  method="POST" action="inscription.php">
-							<div class="form-group">
-								<label for="pseudo" class="col-sm-12">Pseudo</label>
-								<div class="col-sm-12">
-									<input class="form-control" type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>" />
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="mail" class="col-sm-12">e-Mail</label>
-								<div class="col-sm-12">
-									<input class="form-control" type="email" placeholder="Votre mail" id="mail" name="mail" value="<?php if(isset($mail)) { echo $mail; } ?>" />
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="mail2" class="col-sm-12">Confirmation mail</label>
-								<div class="col-sm-12">
-									<input class="form-control" type="email" placeholder="Confirmez votre mail" id="mail2" name="mail2" value="<?php if(isset($mail2)) { echo $mail2; } ?>" />
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="mdp" class="col-sm-12">Mot de passe</label>
-								<div class="col-sm-12">
-									<input class="form-control" type="password" placeholder="Votre mot de passe" id="mdp" name="mdp" />
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="mdp2" class="col-sm-12">Confirmation mail</label>
-								<div class="col-sm-12">
-									<input class="form-control" type="password" placeholder="Confirmez votre mdp" id="mdp2" name="mdp2" />
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div class="col-sm-10 col-sm-offset-2">
-									<! Will be used to display an alert to the user>
-								</div>
-							</div>
-							<div class="col-sm-12">
-								<input id="submit" name="forminscription" type="submit" value="Je m'inscris" class="btn btn-primary">
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer"></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="myModal2" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h1>Connexion</h1>
-					</div>
-					<br>
-					<div class="modal-body">
-						<form class="form-horizontal" method="POST" action="connexion.php">
-							<div class="form-group">
-								<div id="inputconnexionmodal" class="form-group">
-									<input class="form-control" type="email" name="mailconnect" placeholder="Mail" />
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div id="inputconnexionmodal" class="form-group">
-									<input class="form-control" type="password" name="mdpconnect" placeholder="Mot de passe" />
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div id="inputconnexionmodal" class="form-group">
-									<input type="submit" name="formconnexion" value="Connexion" class="btn btn-primary" />
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer"></div>
-				</div>
-			</div>
-		</div>
 </footer>
-
-</footer>
-
-</body>
 </html>
 
