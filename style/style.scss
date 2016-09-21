@@ -36,8 +36,8 @@ $grisfond : #D2D2D2;
 }
 
 
-h4 {
-	color: #ffffff;
+#footer h4 {
+	color: white;
 }
 
 #copyright {
@@ -230,7 +230,39 @@ body {
 	z-index: -999;
 	width: 100%;
 	height: 100%;
+    background-color: black;
 }
 
 
+.container-amg {
+  margin: 0 auto;
+  background-color: white;
+}
+
+.container-amg2 {
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+}
+
+
+
+
+.amg-img{
+  margin-top: 30px;
+  margin-bottom : 30px;
+}
+
+.amgrow{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.amgcol{
+  margin-top: 30px;
+}
+
+.container-amg2 h4{
+  color:white;
+}
 
