@@ -298,7 +298,18 @@ body {
   transform: translate3d(0, -100%, 0);
 }
 
-.hovereffect a, hovereffect p {
+.changement {
+  text-align: center;
+  color: #303030;
+}
+
+.f1 {
+  position: relative;
+  left: 15em;
+  overflow: hidden;
+}
+
+.hovereffect a, .hovereffect p {
   color: #FFF;
   padding: 1em 0;
   opacity: 0;
