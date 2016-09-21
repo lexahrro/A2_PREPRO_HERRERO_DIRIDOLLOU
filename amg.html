@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="style/style.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>$(document).ready(function(){
+		$("#player").hide().fadeIn(5000);
+	});
+	</script>
 
 </head>
 <body>
@@ -38,19 +40,71 @@
 
 	<div class="embed-responsive embed-responsive-16by9">
 		<div id="background">
-			<iframe id='player' width="2500" height="1406" src="https://www.youtube.com/embed/acNcfhwP34o?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp" frameborder="0"></iframe>
+			<iframe id='player' width="2500" height="800" src="https://www.youttube.com/embed/acNcfhwP34o?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="container-amg">
+			<div class="row amgrow">
+				<div class="col-lg-6">
+					<img src="img/amg-img1.jpg" class="img-responsive amg-img img-thumbnail" alt="Image">
+				</div>
+				<div class="col-lg-6 amgcol">
+					<h2>Carrosserie course.</h2>
+					<br>
+					<h4>Véritables pierres angulaires du langage stylistique, la sportivité et l'émotion figurent tout en haut du cahier des charges des designers du nouveau Mercedes-AMG GT.
+					</h4>
+					<p>C'est la première fois qu'un coupé Mercedes-AMG arbore un design classique de type « fastback ». Celui-ci associe une pointe d'agressivité et des formes épurées et sensuelles.
+						La partie avant longue et imposante, qui abrite le nouveau moteur V8 biturbo AMG de 4,0 litres et arbore des bossages particulièrement marquants au niveau du capot, en apporte
+						la preuve la plus parfaite.Le poste de conduite très reculé, les roues de grande taille et l'arrière effilé créent un design impressionnant qui évoque des
+						performances spectaculaires dès le premier regard.
+					</p>
+				</div>
+			</div>
+	</div>
+
+	<div class="container-amg2">
+		<div class="row amgrow">
+			<div class="col-lg-6 amgcol">
+				<h2>200 pulsations/minute et des frissons avant même le départ.</h2>
+				<br>
+				<h4>Il vous séduira en un temps record : le Mercedes AMG GT S passe de 0 à 100 en 3,8s – de quoi couper le souffle – et affiche une vitesse maxi de 310 km/h (Mercedes AMG GT : 4 s et 304 km/h).</h4>
+				<p>Moteur V8 biturbo AMG de 4,0 l à lubrification par carter sec, boîte à double embrayage à 7 rapports SPEEDSHIFT DCT AMG, différentiel arrière autobloquant,
+					train de roulement sport AMG à essieux à doubles bras transversaux en aluminium... Ces caractéristiques font du Mercedes-AMG GT la voiture de sport par excellence.
+					Grâce à son moteur central avant et sa boîte à double embrayage à 7 rapports SPEEDSHIFT DCT AMG (une boîte-pont), le Mercedes-AMG GTaffiche une répartition des masses
+					avant/arrière de 47 %/53 %. Cette dernière, combinée à un centre de gravité bas, lui procure un comportement extrêmement agile et lui permet d'atteindre des vitesses élevées en virage.
+				</p>
+			</div>
+			<div class="col-lg-6">
+				<img src="img/amg-img2.jpg" class="img-responsive amg-img img-thumbnail" alt="Image">
+			</div>
 		</div>
 	</div>
 
+	<div class="container-amg1">
+		<div class="row amgrow">
+			<div class="col-lg-6">
+				<img src="img/amg-img3.jpg" class="img-responsive amg-img img-thumbnail" alt="Image">
+			</div>
+			<div class="col-lg-6 amgcol">
+				<h2>Légère. Athlétique.</h2>
+				<br>
+				<h4>La puissance sans kilos superflus ! La carrosserie du Mercedes-AMG GT séduit par un mix de matériaux intelligent. Grâce à son faible poids, elle procure dynamisme et tenue de route.
+				</h4>
+				<p>Les 233 kilogrammes de la caisse brute du Mercedes-AMG GT représentent l'une des meilleures valeurs du segment des voitures de sport. Ce faible poids est possible grâce au châssis et à la carrosserie,
+					réalisés en grande partie en aluminium. Parallèlement, la structure de la caisse brute offre une grande rigidité et un centre de gravité bas.Grâce à sa conception allégée, l'ensemble de la structure
+					affiche une très bonne résistance à la flexion et à la torsion, ce qui assure en permanence une résistance optimale aux déformations par élasticité. Résultat  : malgré un poids minimal, le véhicule affiche un dynamisme maximal.
+				</p>
+			</div>
+		</div>
+	</div>
 
 </body>
 <!-- footer -->
 <footer>
 	<center>
-		<footer>
 			<div  class="hidden-xs">
 				<div class="container-footer">
-					<div id="footer" class="row">
+					<div id="footer" class="row amgrow">
 						<div class="col-sm-3 col-xs-6">
 							<h4>Mercedes</h4>
 							<a href="#">Configurateur</a><br>
