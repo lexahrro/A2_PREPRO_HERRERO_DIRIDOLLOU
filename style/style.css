@@ -1,5 +1,9 @@
 /*--------------------- Variables et mixins ---------------------- */
 /*----------------------- Navbar ----------------------------------*/
+a:link {
+  text-decoration: none;
+}
+
 .navbar-inverse {
   background-color: #222;
   border-bottom: 2px solid red;
@@ -31,6 +35,20 @@
   transition: all 0.3s ease-in-out;
 }
 
+.navbar-brand > img {
+  display: block;
+}
+
+.navbar-brand > img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.active {
+  color: #fff;
+  background-color: #383838;
+}
+
 /* --------------------------------- Sidebar page story.html ------------------------ */
 /* Slidebar */
 body {
@@ -40,10 +58,11 @@ body {
 /* Toggle Styles */
 #wrapper {
   padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #wrapper.toggled {
@@ -59,10 +78,11 @@ body {
   margin-left: -250px;
   overflow-y: auto;
   background: #000;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -249,8 +269,11 @@ body {
 .hovereffect img {
   display: block;
   position: relative;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hovereffect:hover img {
@@ -312,4 +335,22 @@ body {
 
 #copyright {
   color: #ffffff;
+}
+
+.amgrow a {
+  color: #D2D2D2;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.amgrow a:hover {
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }

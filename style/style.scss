@@ -1,7 +1,7 @@
 
 /*--------------------- Variables et mixins ---------------------- */
 
-$grisfond : #D2D2D2;
+$grisfoot : #D2D2D2;
 
 @mixin transition($transition) {
   -webkit-transition: all $transition ease-in-out;
@@ -11,8 +11,24 @@ $grisfond : #D2D2D2;
   transition: all $transition ease-in-out;
 }
 
+@mixin scale($scale1, $scale2) {
+  -ms-transform: scale($scale1,$scale2);
+  -webkit-transform: scale($scale1,$scale2);
+  transform: scale($scale1,$scale2);
+}
+
+@mixin opacity($opacity1, $opacity2) {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
 
 /*----------------------- Navbar ----------------------------------*/
+
+a:link
+{
+  text-decoration:none;
+}
 
 .navbar-inverse {
 	background-color: #222;
@@ -38,6 +54,18 @@ $grisfond : #D2D2D2;
 }
 }
 
+.navbar-brand>img {
+  display: block;
+  &:hover {
+    @include opacity(0.5, 50);
+  }
+}
+
+.active{
+  color: #fff;
+  background-color: #383838;
+}
+
 
 /* --------------------------------- Sidebar page story.html ------------------------ */
 
@@ -52,10 +80,7 @@ body {
 
 #wrapper {
     padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    @include transition(0.5s);
 }
 
 #wrapper.toggled {
@@ -71,10 +96,7 @@ body {
     margin-left: -250px;
     overflow-y: auto;
     background: #000;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    @include transition(0.3s);
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -113,13 +135,14 @@ body {
     display: block;
     text-decoration: none;
     color: #999999;
+
+    &:hover{
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255,255,255,0.2);
+    }
 }
 
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
@@ -274,8 +297,7 @@ body {
 .hovereffect img {
   display: block;
   position: relative;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+  @include transition(0.3s);
 }
 
 .hovereffect:hover img {
@@ -342,3 +364,13 @@ body {
 #copyright {
   color: #ffffff;
 }
+
+.amgrow a {
+  color: $grisfoot;
+  @include transition(0.2s);
+    &:hover{
+      color: white;
+      @include transition(0.2s);
+    }
+}
+
