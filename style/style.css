@@ -207,3 +207,14 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.changement {
+  text-align: center;
+  color: #303030;
+}
+
+.f1 {
+  position: relative;
+  left: 15em;
+  overflow: hidden;
+}
