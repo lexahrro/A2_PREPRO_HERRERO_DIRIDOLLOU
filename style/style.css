@@ -37,11 +37,21 @@ a:link {
 
 .navbar-brand > img {
   display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-brand > img:hover {
   opacity: 0.5;
   filter: alpha(opacity=50);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .active {
@@ -364,4 +374,50 @@ body {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.coll {
+  background-color: black;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.colr {
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.rowcab {
+  margin: 0 auto;
+}
+
+#success_message {
+  display: none;
+}
+
+.header {
+  padding: 0px 0px 20px 0px;
+}
+
+.img-ss-header {
+  margin-top: 20px;
+}
+
+.bodycab {
+  background-color: black;
+}
+
+.con1 {
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.con2 {
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.container-cab {
+  padding-top: 30px;
 }

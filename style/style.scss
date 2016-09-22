@@ -56,8 +56,10 @@ a:link
 
 .navbar-brand>img {
   display: block;
+  @include transition(0.3s)
   &:hover {
     @include opacity(0.5, 50);
+    @include transition(0.3s)
   }
 }
 
@@ -385,3 +387,46 @@ body {
     }
 }
 
+.coll{
+   background-color: black;
+    padding-right: 0px;
+    padding-left: 0px;
+ }
+
+.colr{
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.rowcab{
+  margin : 0 auto;
+}
+
+#success_message{ display: none;}
+
+.header{
+  padding: 0px 0px 20px 0px;
+}
+
+.img-ss-header{
+  margin-top: 20px;
+}
+
+.bodycab{
+  background-color: black;
+}
+
+.con1{
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.con2{
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.container-cab{
+  padding-top: 30px;
+}
