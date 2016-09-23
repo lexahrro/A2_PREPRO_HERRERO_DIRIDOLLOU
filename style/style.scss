@@ -56,10 +56,10 @@ a:link
 
 .navbar-brand>img {
   display: block;
-  @include transition(0.3s)
+  @include transition(0.3s);
   &:hover {
     @include opacity(0.5, 50);
-    @include transition(0.3s)
+    @include transition(0.3s);
   }
 }
 
@@ -437,13 +437,49 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
-  @include transition(0.3s)
+  @include transition(0.3s);
 
     &:hover{
       background-color: rgba(48, 152, 157, 0.4);
     }
 }
 
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/index1.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../img/logo.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.img-logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 
 

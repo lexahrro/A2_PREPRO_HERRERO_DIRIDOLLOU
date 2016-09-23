@@ -25,7 +25,6 @@ a:link {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .navbar-inverse .navbar-nav > li > a:hover {
   color: red;
   -webkit-transition: all 0.3s ease-in-out;
@@ -43,7 +42,6 @@ a:link {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .navbar-brand > img:hover {
   opacity: 0.5;
   filter: alpha(opacity=50);
@@ -119,28 +117,23 @@ body {
   padding: 0;
   list-style: none;
 }
-
 .sidebar-nav li {
   text-indent: 20px;
   line-height: 40px;
 }
-
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
   color: #999999;
 }
-
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
 }
-
 .sidebar-nav li a:active {
   text-decoration: none;
 }
-
 .sidebar-nav li a:focus {
   text-decoration: none;
 }
@@ -149,25 +142,29 @@ body {
   #wrapper {
     padding-left: 250px;
   }
+
   #wrapper.toggled {
     padding-left: 0;
   }
+
   #sidebar-wrapper {
     width: 250px;
   }
+
   #wrapper.toggled #sidebar-wrapper {
     width: 0;
   }
+
   #page-content-wrapper {
     padding: 20px;
     position: relative;
   }
+
   #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: 0;
   }
 }
-
 /* --------------------------- Style indicateurs carousel -------------------------- */
 .carousel-indicators li {
   display: inline-block;
@@ -176,7 +173,7 @@ body {
   margin: 0;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000\9;
+  background-color: #000 \9;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 0px;
@@ -273,7 +270,6 @@ body {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .hovereffect img:hover {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.6);
@@ -326,11 +322,9 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 #footer h4 {
   color: white;
 }
-
 #footer #copyright {
   color: white;
 }
@@ -348,7 +342,6 @@ body {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 .amgrow a:hover {
   color: white;
   -webkit-transition: all 0.2s ease-in-out;
@@ -415,7 +408,6 @@ body {
   text-align: center;
   cursor: default;
 }
-
 .hovereffect1 img {
   display: block;
   position: relative;
@@ -434,7 +426,35 @@ body {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .hovereffect1 .overlay1:hover {
   background-color: rgba(48, 152, 157, 0.4);
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/index1.jpg");
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../img/logo.jpg");
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
