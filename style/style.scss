@@ -34,6 +34,17 @@ a:link
 	background-color: #222;
 	border-bottom: 2px solid red;
 	border-radius: 0;
+
+    .navbar-nav>li>a{
+          color: #ffffff;
+          font-variant: small-caps;
+          @include transition(0.3s);
+
+          &:hover{
+            color: red;
+            @include transition(0.3s);
+          }
+    }
 }
 
 .navbar {
@@ -42,17 +53,7 @@ a:link
 	margin-bottom: 0;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-	color: #ffffff;
-	font-variant: small-caps;
-    @include transition(0.3s);
 
-	&:hover{
-			color: red;
-            @include transition(0.3s);
-
-}
-}
 
 .navbar-brand>img {
   display: block;
@@ -154,11 +155,12 @@ body {
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
+
+          .toggled{
+            padding-left: 0;
+          }
     }
 
-    #wrapper.toggled {
-        padding-left: 0;
-    }
 
     #sidebar-wrapper {
         width: 250px;
@@ -181,25 +183,28 @@ body {
 
 /* --------------------------- Style indicateurs carousel -------------------------- */
 
-.carousel-indicators li {
-	 display: inline-block;
-	 width: 20px;
-	 height: 5px;
-	 margin: 0;
-	 text-indent: -999px;
-	 cursor: pointer;
-	 background-color: #000\9;
-	 background-color: rgba(0,0,0,0);
-	 border: 1px solid #fff;
-	 border-radius: 0px;
-}
-
-.carousel-indicators .active {
-	width: 20px;
-	height: 5px;
-	margin: 0;
-	background-color: #fff;
-
+.carousel-indicators
+{
+  .active
+  {
+    width: 20px;
+    height: 5px;
+    margin: 0;
+    background-color: #fff;
+  }
+  li
+  {
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    margin: 0;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 0px;
+  }
 }
 
 /* ------------------------------ Page AMG --------------------------- */
@@ -254,22 +259,60 @@ body {
   position: relative;
   text-align: center;
   cursor: default;
+
+    h2{
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      background-color: transparent;
+      color: #FFF;
+      padding: 1em 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0,-100%,0);
+      transform: translate3d(0,-100%,0);
+    }
+
+    a, p {
+      color: #FFF;
+      padding: 1em 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+
+    .overlay {
+      position: absolute;
+      overflow: hidden;
+      width: 80%;
+      height: 80%;
+      left: 10%;
+      top: 10%;
+      border-bottom: 1px solid #FFF;
+      border-top: 1px solid #FFF;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      @include scale(0.1,0.1);
+    }
+
+    img {
+      display: block;
+      position: relative;
+      @include transition(0.3s);
+      &:hover{
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+        filter: brightness(0.6);
+        -webkit-filter: brightness(0.6);
+      }
+    }
 }
 
-.hovereffect .overlay {
-
-  position: absolute;
-  overflow: hidden;
-  width: 80%;
-  height: 80%;
-  left: 10%;
-  top: 10%;
-  border-bottom: 1px solid #FFF;
-  border-top: 1px solid #FFF;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  @include scale(0.1,0.1);
-}
 
 .hovereffect:hover .overlay {
   opacity: 1;
@@ -277,49 +320,13 @@ body {
   @include scale(1,1);
 }
 
-.hovereffect img {
-  display: block;
-  position: relative;
-  @include transition(0.3s);
-    &:hover{
-      filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-      filter: brightness(0.6);
-      -webkit-filter: brightness(0.6);
-    }
-}
 
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  background-color: transparent;
-  color: #FFF;
-  padding: 1em 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,-100%,0);
-  transform: translate3d(0,-100%,0);
-}
 
 .changement {
     text-align: center;
     color: #303030
 }
 
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  padding: 1em 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-}
 
 .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
   opacity: 1;
@@ -446,13 +453,12 @@ body {
 
 
 .parallax {
-  /* The image used */
+
   background-image: url("../img/index1.jpg");
 
-  /* Set a specific height */
   min-height: 300px;
 
-  /* Create the parallax scrolling effect */
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -461,13 +467,12 @@ body {
 
 
 .parallax1 {
-  /* The image used */
+
   background-image: url("../img/logo.jpg");
 
-  /* Set a specific height */
+
   min-height: 300px;
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
