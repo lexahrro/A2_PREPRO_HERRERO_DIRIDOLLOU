@@ -564,16 +564,16 @@ html{    background:url(../img/contactimg.JPG) no-repeat;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   border: 3px solid rgba(0,0,0,0);
+    &:focus{
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid red;
+    color: red;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+  }
 }
 
-.feedback-input:focus{
-  background: #fff;
-  box-shadow: 0;
-  border: 3px solid #3498db;
-  color: #3498db;
-  outline: none;
-  padding: 13px 13px 13px 54px;
-}
 
 .focused{
   color:#30aed6;
@@ -633,9 +633,9 @@ input:focus, textarea:focus {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   float:left;
   width: 100%;
-  border: #fbfbfb solid 4px;
+  border: red solid 4px;
   cursor:pointer;
-  background-color: #3498db;
+  background-color: black;
   color:white;
   font-size:24px;
   padding-top:22px;
@@ -645,12 +645,13 @@ input:focus, textarea:focus {
   transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
+  text-transform: uppercase;
+    &:hover{
+  background-color: rgba(0,0,0,0);
+  color: red;
+}
 }
 
-#button-blue:hover{
-  background-color: rgba(0,0,0,0);
-  color: #0493bd;
-}
   
 .submit:hover {
   color: #3498db;
