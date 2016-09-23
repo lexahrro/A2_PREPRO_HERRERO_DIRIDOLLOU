@@ -57,114 +57,68 @@ a:link {
   background-color: #383838;
 }
 
-/* --------------------------------- Sidebar page story.html ------------------------ */
-/* Slidebar */
-body {
-  overflow-x: hidden;
+/* ---------------------------------  story ------------------------ */
+.parallax1 {
+  background-image: url("../img/logo.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Toggle Styles */
-#wrapper {
-  padding-left: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+.parallax2 {
+  background-image: url("../img/par.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#wrapper.toggled {
-  padding-left: 250px;
+.parallax3 {
+  background-image: url("../img/par2.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  left: 250px;
-  width: 0;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #000;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.img-logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-#wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+.thumbnails img {
+  height: 80px;
+  border: 4px solid black;
+  padding: 1px;
+  margin: 0 10px 10px 0;
+}
+.thumbnails img:hover {
+  border: 4px solid red;
+  cursor: pointer;
 }
 
-#page-content-wrapper {
+.preview img {
+  border: 4px solid black;
+  padding: 1px;
   width: 100%;
-  position: absolute;
-  padding: 15px;
 }
 
-#wrapper.toggled #page-content-wrapper {
-  position: absolute;
-  margin-right: -250px;
+.contgallery {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
-/* Sidebar Styles */
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.sidebar-nav li {
-  text-indent: 20px;
-  line-height: 40px;
-}
-.sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: #999999;
-}
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-}
-.sidebar-nav li a:active {
-  text-decoration: none;
-}
-.sidebar-nav li a:focus {
-  text-decoration: none;
+.conparallax {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-@media (min-width: 768px) {
-  #wrapper {
-    padding-left: 250px;
-  }
-  #wrapper .toggled {
-    padding-left: 0;
-  }
-
-  #sidebar-wrapper {
-    width: 250px;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    width: 0;
-  }
-
-  #page-content-wrapper {
-    padding: 20px;
-    position: relative;
-  }
-
-  #wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0;
-  }
-}
-/* --------------------------- Style indicateurs carousel -------------------------- */
+/* --------------------------- Index -------------------------- */
 .carousel-indicators .active {
   width: 20px;
   height: 5px;
@@ -182,46 +136,6 @@ body {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 0px;
-}
-
-/* ------------------------------ Page AMG --------------------------- */
-#background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -999;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-}
-
-.container-amg {
-  margin: 0 auto;
-  background-color: white;
-}
-
-.container-amg2 {
-  margin: 0 auto;
-  background-color: black;
-  color: white;
-}
-
-.amg-img {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.amgrow {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.amgcol {
-  margin-top: 30px;
-}
-
-.container-amg2 h4 {
-  color: white;
 }
 
 /*---------------------------- Effect index 3 col -------------------------- */
@@ -309,44 +223,44 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-/*----------------------------- Footer ---------------------------- */
-#footer {
-  padding-top: 20px;
-  background-color: black;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-#footer h4 {
-  color: white;
-}
-#footer #copyright {
-  color: white;
-}
-
-#footermobile {
-  padding-top: 20px;
+/* ------------------------------ Page AMG --------------------------- */
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
   background-color: black;
 }
 
-.amgrow a {
-  color: #D2D2D2;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.amgrow a:hover {
-  color: white;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.container-amg {
+  margin: 0 auto;
+  background-color: white;
 }
 
-#success_message {
-  display: none;
+.container-amg2 {
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+}
+
+.amg-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.amgrow {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.amgcol {
+  margin-top: 30px;
+}
+
+.container-amg2 h4 {
+  color: white;
 }
 
 /* ------------------------------ page cab -------------------- */
@@ -433,38 +347,43 @@ body {
   background-size: cover;
 }
 
-.parallax1 {
-  background-image: url("../img/logo.jpg");
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*----------------------------- Footer ---------------------------- */
+#footer {
+  padding-top: 20px;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#footer h4 {
+  color: white;
+}
+#footer #copyright {
+  color: white;
 }
 
-.img-logo {
-  margin-top: 30px;
-  margin-bottom: 30px;
+#footermobile {
+  padding-top: 20px;
+  background-color: black;
 }
 
-.thumbnails img {
-  height: 80px;
-  border: 4px solid #555;
-  padding: 1px;
-  margin: 0 10px 10px 0;
+.amgrow a {
+  color: #D2D2D2;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.thumbnails img:hover {
-  border: 4px solid #00ccff;
-  cursor: pointer;
+.amgrow a:hover {
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.preview img {
-  border: 4px solid #444;
-  padding: 1px;
-  width: 800px;
-}
-
-/*--------------------------- Contact Form------------------------------ */
+/*--------------------------- Contact ------------------------------ */
 html {
   background: url(../img/contactimg.JPG) no-repeat;
   background-size: cover;
@@ -514,7 +433,6 @@ html {
   box-sizing: border-box;
   border: 3px solid transparent;
 }
-
 .feedback-input:focus {
   background: #fff;
   box-shadow: 0;
@@ -536,7 +454,6 @@ html {
   background-position: 11px 8px;
   background-repeat: no-repeat;
 }
-
 #name:focus {
   background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
   background-size: 30px 30px;
@@ -551,7 +468,6 @@ html {
   background-position: 11px 8px;
   background-repeat: no-repeat;
 }
-
 #email:focus {
   background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
   background-size: 30px 30px;
@@ -595,7 +511,6 @@ input:focus, textarea:focus {
   margin-top: -4px;
   font-weight: 700;
 }
-
 #button-blue:hover {
   background-color: transparent;
   color: #0493bd;
