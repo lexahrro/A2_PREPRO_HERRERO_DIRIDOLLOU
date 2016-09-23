@@ -19,8 +19,8 @@ $grisfoot : #D2D2D2;
 }
 
 @mixin opacity($opacity1, $opacity2) {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: $opacity1;
+  filter: alpha(opacity=$opacity2);
 }
 
 
@@ -35,6 +35,17 @@ a:link
 	background-color: #222;
 	border-bottom: 2px solid red;
 	border-radius: 0;
+
+    .navbar-nav>li>a{
+          color: #ffffff;
+          font-variant: small-caps;
+          @include transition(0.3s);
+
+          &:hover{
+            color: red;
+            @include transition(0.3s);
+          }
+    }
 }
 
 .navbar {
@@ -43,24 +54,14 @@ a:link
 	margin-bottom: 0;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-	color: #ffffff;
-	font-variant: small-caps;
-    @include transition(0.3s);
 
-	&:hover{
-			color: red;
-            @include transition(0.3s);
-
-}
-}
 
 .navbar-brand>img {
   display: block;
-  @include transition(0.3s)
+  @include transition(0.3s);
   &:hover {
     @include opacity(0.5, 50);
-    @include transition(0.3s)
+    @include transition(0.3s);
   }
 }
 
@@ -139,43 +140,28 @@ body {
             text-decoration: none;
             color: #fff;
             background: rgba(255,255,255,0.2);
+
+          }
+          &:active{
+            text-decoration: none;
+          }
+          &:focus{
+            text-decoration: none;
           }
         }
       }
 }
 
 
-
-
-
-.sidebar-nav li a:active, .sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-      a {
-        color: #999999;
-        &:hover{
-          color: #fff;
-          background: none;
-        }
-      }
-}
-
-
-
-
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
+
+          .toggled{
+            padding-left: 0;
+          }
     }
 
-    #wrapper.toggled {
-        padding-left: 0;
-    }
 
     #sidebar-wrapper {
         width: 250px;
@@ -198,25 +184,28 @@ body {
 
 /* --------------------------- Style indicateurs carousel -------------------------- */
 
-.carousel-indicators li {
-	 display: inline-block;
-	 width: 20px;
-	 height: 5px;
-	 margin: 0;
-	 text-indent: -999px;
-	 cursor: pointer;
-	 background-color: #000\9;
-	 background-color: rgba(0,0,0,0);
-	 border: 1px solid #fff;
-	 border-radius: 0px;
-}
-
-.carousel-indicators .active {
-	width: 20px;
-	height: 5px;
-	margin: 0;
-	background-color: #fff;
-
+.carousel-indicators
+{
+  .active
+  {
+    width: 20px;
+    height: 5px;
+    margin: 0;
+    background-color: #fff;
+  }
+  li
+  {
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    margin: 0;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 0px;
+  }
 }
 
 /* ------------------------------ Page AMG --------------------------- */
@@ -271,77 +260,74 @@ body {
   position: relative;
   text-align: center;
   cursor: default;
-}
 
-.hovereffect .overlay {
+    h2{
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      background-color: transparent;
+      color: #FFF;
+      padding: 1em 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0,-100%,0);
+      transform: translate3d(0,-100%,0);
+    }
 
-  position: absolute;
-  overflow: hidden;
-  width: 80%;
-  height: 80%;
-  left: 10%;
-  top: 10%;
-  border-bottom: 1px solid #FFF;
-  border-top: 1px solid #FFF;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(0,1);
-  -ms-transform: scale(0,1);
-  transform: scale(0,1);
-}
+    a, p {
+      color: #FFF;
+      padding: 1em 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
 
-.hovereffect:hover .overlay {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
+    .overlay {
+      position: absolute;
+      overflow: hidden;
+      width: 80%;
+      height: 80%;
+      left: 10%;
+      top: 10%;
+      border-bottom: 1px solid #FFF;
+      border-top: 1px solid #FFF;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      @include scale(0.1,0.1);
+    }
 
-.hovereffect img {
-  display: block;
-  position: relative;
-  @include transition(0.3s);
-    &:hover{
-      filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
-      filter: brightness(0.6);
-      -webkit-filter: brightness(0.6);
+    img {
+      display: block;
+      position: relative;
+      @include transition(0.3s);
+      &:hover{
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+        filter: brightness(0.6);
+        -webkit-filter: brightness(0.6);
+      }
     }
 }
 
 
-.hovereffect h2 {
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  background-color: transparent;
-  color: #FFF;
-  padding: 1em 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,-100%,0);
-  transform: translate3d(0,-100%,0);
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  @include scale(1,1);
 }
+
+
 
 .changement {
     text-align: center;
     color: #303030
 }
 
-
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  padding: 1em 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-}
 
 .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
   opacity: 1;
@@ -359,21 +345,22 @@ body {
   background-color: black;
   padding-left: 20px;
   padding-right: 20px;
+
+    h4{
+      color: white;
+    }
+
+    #copyright{
+      color: white;
+    }
 }
+
 
 #footermobile{
   padding-top: 20px;
   background-color: black;
 }
 
-
-#footer h4 {
-  color: white;
-}
-
-#copyright {
-  color: #ffffff;
-}
 
 .amgrow a {
   color: $grisfoot;
@@ -382,22 +369,6 @@ body {
       color: white;
       @include transition(0.2s);
     }
-}
-
-.coll{
-   background-color: black;
-    padding-right: 0px;
-    padding-left: 0px;
- }
-
-.colr{
-  background-color: white;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.rowcab{
-  margin : 0 auto;
 }
 
 #success_message{ display: none;}
@@ -432,6 +403,24 @@ body {
 }
 
 
+.coll{
+  background-color: black;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.colr{
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.rowcab{
+  margin : 0 auto;
+}
+
+
 /*--------------------------- hover effect cab ------------------------------ */
 
 .hovereffect1 {
@@ -456,13 +445,47 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
-  @include transition(0.3s)
+  @include transition(0.3s);
 
     &:hover{
       background-color: rgba(48, 152, 157, 0.4);
     }
 }
 
+
+.parallax {
+
+  background-image: url("../img/index1.jpg");
+
+  min-height: 300px;
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax1 {
+
+  background-image: url("../img/logo.jpg");
+
+
+  min-height: 300px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.img-logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 
 
